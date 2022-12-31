@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
@@ -62,7 +63,6 @@ public class mainFrame extends JFrame implements ActionListener{
 		this.setTitle("Fuselage Splicer");
 		this.setSize(640, 450);
 		this.getContentPane().setBackground(FRAME_COLOR);
-		
 		// ----------- input panel setup
 		inputPanel = new JPanel();
 		inputPanel.setBounds(25, 25, 250, 350);
@@ -98,7 +98,7 @@ public class mainFrame extends JFrame implements ActionListener{
 		int width = 100;
 		int height = 28;
 			//--------- input labels
-			JLabel[] labels = new JLabel[8];  //0 = length 6 = rearWidth 7 = sliceCount
+			JLabel[] labels = new JLabel[8];  //0 = length ... 7 = sliceCount, in order
 			
 			for(int i = 0; i < 8; i++) {
 				labels[i] = new JLabel();
